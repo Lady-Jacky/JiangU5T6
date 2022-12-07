@@ -27,7 +27,7 @@ public class CreditCard
      */
     public void chargeCard(int amount)
     {
-        // TO BE IMPLEMENTED
+        balanceOwed += amount;
     }
 
     /** Reduces balanceOwed by the amount
@@ -36,7 +36,7 @@ public class CreditCard
      */
     public void reduceBalance(int amount)
     {
-        // TO BE IMPLEMENTED
+        balanceOwed-=amount;
     }
 
     /** Checks to see if toCheckPIN matches personalPIN exactly;
@@ -48,7 +48,7 @@ public class CreditCard
      */
     public boolean checkPIN(String toCheckPIN)
     {
-        // TO BE IMPLEMENTED
+        return toCheckPIN.equals(personalPIN);
     }
 
     public String cardInfo()
